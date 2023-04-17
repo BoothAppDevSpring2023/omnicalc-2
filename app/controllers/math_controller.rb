@@ -1,5 +1,9 @@
 class MathController < ApplicationController
 
+  def addition_home
+    render({ :template => "math_templates/addition_form.html.erb"})
+    end
+
   def blank_add_form
   render({ :template => "math_templates/addition_form.html.erb"})
   end
